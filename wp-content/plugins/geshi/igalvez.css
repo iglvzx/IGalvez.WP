@@ -1,0 +1,42 @@
+/* GeSHi container -----------------------------------------------------------*/
+.geshi {
+    font-family: monospace;
+}
+
+.geshi ol {
+    border: 1px solid #cccccc;
+    color: #888888; /* line numbers */
+    padding: 5px;
+}
+
+.geshi li {
+    border-left: 1px solid #cccccc;
+    padding-left: 10px;
+}
+
+.geshi li div {
+    color: #000000;
+}
+
+/* GeSHi common styles -------------------------------------------------------*/
+.geshi .de1, .geshi .de2 {
+    margin: 0;
+    padding: 0;
+    background: none;
+    vertical-align: top;
+}
+
+.geshi .imp {
+    font-weight: bold;
+    color: red;
+}
+
+.geshi li, .geshi .li1 {
+    font-weight: normal;
+    vertical-align: top;
+}
+
+.geshi .li2 {
+    font-weight: bold;
+    vertical-align: top;
+}
