@@ -12,8 +12,12 @@ License: GPL v3
 // Process shortcodes before line breaks.
 remove_filter('the_content', 'do_shortcode');
 add_filter('the_content', 'do_shortcode', 11);
-remove_filter( 'the_content', 'wpautop' );
-add_filter( 'the_content', 'wpautop' , 12);
+remove_filter('the_content', 'wpautop');
+add_filter('the_content', 'wpautop' , 12);
+
+// Allow shortcodes in comments
+add_filter('comment_text', 'shortcode_unautop');
+add_filter('comment_text', 'do_shortcode');
 
 // Disable smart quotes, punctuation, etc.
 remove_filter('the_content', 'wptexturize');
