@@ -2,17 +2,18 @@
 /*
 Plugin Name: IGalvez.GeSHi
 Plugin URI: http://igalvez.net/
-Description: Syntax highlighting powered by GeSHi. Use the following shortcode: [sourcecode lang="$lang"]...[/sourcecode]
+Description: Syntax highlighting powered by GeSHi. Use the following shortcode: [sourcecode lang="$lang" lines="1,2,3..."]...[/sourcecode]
 Version: 1.0
 Author: Israel Galvez
 Author URI: http://igalvez.net/
 License: GPL v3
 */
 
-// Create GeSHi [sourcecode lang="$lang"] shortcode
+// Create GeSHi [sourcecode lang="$lang" lines="1,2,3..."] shortcode
 function igalvez_geshi($atts, $content = null) {
     extract(shortcode_atts(array(
-		'lang' => 'text', // default to plain text
+		'lang' => 'text', // source code language -- default to plain text
+        'lines' => false, // lines to highlight -- default to false 
 	), $atts));
     
     $content = trim($content); // remove whitespace at ends
@@ -24,7 +25,13 @@ function igalvez_geshi($atts, $content = null) {
     $geshi->enable_classes();
     $geshi->enable_line_numbers(GESHI_NORMAL_LINE_NUMBERS);
     
-    
+    // Convert $lines parameter to an array of integers
+    // and highlight these individual lines.
+    if($lines != false) {
+        $LINES = array_map('intval', explode(',', $lines));
+        $geshi->highlight_lines_extra($LINES);
+    }
+
     $filetype = $geshi->get_language_name();
     $header = "<div class=\"geshi-header\">$filetype</div>";
     
