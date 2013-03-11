@@ -6,6 +6,7 @@
 .geshi ol {
     border: 1px solid #cccccc;
     color: #888888; /* line numbers */
+    font-style: italic; /* line numbers */
     padding: 5px;
 }
 
@@ -16,6 +17,7 @@
 
 .geshi li div {
     color: #000000;
+    font-style: normal;
 }
 
 /* GeSHi common styles -------------------------------------------------------*/
