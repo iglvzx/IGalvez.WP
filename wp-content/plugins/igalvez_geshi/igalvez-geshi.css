@@ -1,3 +1,6 @@
+/* Google Web Fonts: Ubuntu Mono */
+@import url("http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic");
+
 /* GeSHi container -----------------------------------------------------------*/
 .geshi-header {
     text-align: center;
@@ -9,7 +12,8 @@
 }
 
 .geshi {
-    font-family: monospace;
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 12pt;
 }
 
 .geshi ol {
