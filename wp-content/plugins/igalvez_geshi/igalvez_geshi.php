@@ -33,15 +33,4 @@ function add_igalvez_geshi_css() {
     wp_register_style('igalvez-geshi', plugins_url('igalvez-geshi.css', __FILE__));
     wp_enqueue_style('igalvez-geshi');
 }
-
-// Process shortcodes before line breaks.
-remove_filter('the_content', 'do_shortcode');
-add_filter('the_content', 'do_shortcode', 11);
-remove_filter( 'the_content', 'wpautop' );
-add_filter( 'the_content', 'wpautop' , 12);
-
-// Disable smart quotes, punctuation, etc.
-remove_filter('the_content', 'wptexturize');
-remove_filter('comment_text', 'wptexturize');
-remove_filter('the_excerpt', 'wptexturize');
 ?>
