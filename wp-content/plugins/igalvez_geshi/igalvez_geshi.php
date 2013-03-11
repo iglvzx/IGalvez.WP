@@ -23,7 +23,11 @@ function igalvez_geshi($atts, $content = null) {
     $geshi->set_overall_class('geshi');
     $geshi->enable_line_numbers(GESHI_NORMAL_LINE_NUMBERS);
     
-    return $geshi->parse_code();
+    
+    $filetype = $geshi->get_language_name();
+    $header = "<div class=\"geshi-header\">$filetype</div>";
+    
+    return $header . $geshi->parse_code();
 }
 add_shortcode('sourcecode', 'igalvez_geshi');
 

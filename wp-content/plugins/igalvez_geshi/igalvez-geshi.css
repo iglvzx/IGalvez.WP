@@ -1,4 +1,13 @@
 /* GeSHi container -----------------------------------------------------------*/
+.geshi-header {
+    text-align: center;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    background-color: #f8f8f8;
+    color: #888888;
+}
+
 .geshi {
     font-family: monospace;
 }
