@@ -131,3 +131,37 @@
 .html .st0 { /* strings */
     color: #cb4b16;
 }
+
+/* JavaScript ----------------------------------------------------------------*/
+.javascript .kw1 { /* keywords */
+    color: #d33682;
+    font-weight: bold; 
+}
+
+.javascript .nu0,
+.javascript .st0 { /* strings and numbers */
+    color: #cb4b16;
+}
+
+.javascript .me1 { /* methods */
+    color: #859900;
+}
+
+.javascript .kw4 { /* built-in functions */
+    color: #2aa198;
+}
+
+/* Apache --------------------------------------------------------------------*/
+.apache .kw3 { /* tags */
+    color: #d33682;
+    font-weight: bold; 
+}
+
+.apache .kw1 { /* properties */
+    color: #2aa198;
+}
+
+.apache .st0,
+.apache .nu0 { /* strings and numbers */
+    color: #cb4b16;
+}
