@@ -4,28 +4,25 @@
 /* GeSHi container -----------------------------------------------------------*/
 .geshi-header {
     text-align: center;
-    border-top: 1px solid #cccccc;
-    border-left: 1px solid #cccccc;
-    border-right: 1px solid #cccccc;
-    background-color: #f8f8f8;
-    color: #969696;
+    background-color: #eee8d5;
+    color: #586e75;
 }
 
 .geshi {
     font-family: "Source Code Pro", monospace;
     font-size: 10pt;
+    background-color: #fdf6e3;
 }
 
 .geshi ol {
-    border: 1px solid #cccccc;
-    color: #969696; /* line numbers */
+    color: #93a1a1; /* line numbers */
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
 }
 
 .geshi li {
-    border-left: 1px solid #cccccc;
+    border-left: 1px solid #eee8d5;
     padding-left: 10px;
     padding-right: 5px;
     line-height: normal;
@@ -36,13 +33,13 @@
 }
 
 .geshi li.ln-xtra {
-    background-color: #eeeeee;
+    background-color: #eee8d5;
     padding-top: 2px;
     padding-bottom: 2px;
 }
 
 .geshi li div {
-    color: #000000;
+    color: #657b83; /* normal text */
     font-style: normal;
 }
 
@@ -56,7 +53,7 @@
 
 .geshi .imp {
     font-weight: bold;
-    color: #cc0000;
+    color: #dc322f;
 }
 
 .geshi li, .geshi .li1 {
@@ -72,37 +69,35 @@
 /* PHP -----------------------------------------------------------------------*/
 .php .re0, /* variables */
 .php .es4 {
-    color: #6D3206;
+    color: #d33682;
     font-weight: bold;
 }
 
 .php .kw3 { /* built-in functions */
-    color: #9933CC;
+    color: #2aa198;
     font-weight: bold;
 }
 .php .me1 { /* methods */
-    color: #009900;
+    color: #859900;
 }
 
-.php .kw1 { /* keywords */
-    color: #0000E6;
+.php .kw1 { /* main keywords */
+    color: #6c71c4;
 }
 
-.php .kw2,
+.php .kw2, /* other keywords */
 .php .sy1 {
     font-weight: bold;
+    color: #586e75;
 }
 
-.php .st0, /* strings */
-.php .st_h {
-    color: #CE7B00;
-}
-
-.php .nu0 { /* numbers */
-    color: #FF00FF;
+.php .st0, /* strings and numbers */
+.php .st_h,
+.php .nu0 {
+    color: #cb4b16;
 }
 
 .php .co1, /* comments */
 .php .coMULTI {
-    color: #969696;
+    color: #93a1a1;
 }
