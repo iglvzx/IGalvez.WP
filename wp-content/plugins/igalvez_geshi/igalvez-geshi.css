@@ -12,6 +12,8 @@
     font-family: "Source Code Pro", monospace;
     font-size: 10pt;
     background-color: #fdf6e3;
+    border-radius: 4px;
+    box-shadow: 2px 2px 1px #eee8d5;
 }
 
 .geshi ol {
@@ -30,6 +32,7 @@
 
 .geshi a {
     text-decoration: none;
+    color: #2aa198;
 }
 
 .geshi li.ln-xtra {

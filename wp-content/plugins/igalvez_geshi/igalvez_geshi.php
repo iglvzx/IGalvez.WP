@@ -32,11 +32,8 @@ function igalvez_geshi($atts, $content = null) {
         $LINES = array_map('intval', explode(',', $lines));
         $geshi->highlight_lines_extra($LINES);
     }
-
-    $filetype = $geshi->get_language_name();
-    $header = "<div class=\"geshi-header\">$filetype</div>";
     
-    return $header . $geshi->parse_code();
+    return $geshi->parse_code();
 }
 add_shortcode('sourcecode', 'igalvez_geshi');
 
