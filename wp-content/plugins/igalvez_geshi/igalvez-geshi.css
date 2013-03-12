@@ -69,6 +69,11 @@
     vertical-align: top;
 }
 
+.geshi .co1, /* comments */
+.geshi .coMULTI {
+    color: #93a1a1;
+}
+
 /* PHP -----------------------------------------------------------------------*/
 .php .re0, /* variables */
 .php .es4 {
@@ -100,7 +105,29 @@
     color: #cb4b16;
 }
 
-.php .co1, /* comments */
-.php .coMULTI {
-    color: #93a1a1;
+/* HTML ----------------------------------------------------------------------*/
+.html .sc0 { /* doctype */
+    font-weight: bold;
+    color: #586e75;
+}
+
+.html .kw2 { /* tags */
+    color: #d33682;
+    font-weight: bold; 
+}
+
+.html .sc2 {
+    color: #d33682;
+}
+
+.html .sc1 { /* escaped chars, entities */
+    color: #dc322f;
+}
+
+.html .kw3 { /* attributes */
+    color: #2aa198;
+}
+
+.html .st0 { /* strings */
+    color: #cb4b16;
 }
