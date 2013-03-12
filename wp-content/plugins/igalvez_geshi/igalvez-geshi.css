@@ -8,7 +8,7 @@
     border-left: 1px solid #cccccc;
     border-right: 1px solid #cccccc;
     background-color: #f8f8f8;
-    color: #888888;
+    color: #969696;
 }
 
 .geshi {
@@ -18,7 +18,7 @@
 
 .geshi ol {
     border: 1px solid #cccccc;
-    color: #888888; /* line numbers */
+    color: #969696; /* line numbers */
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
@@ -29,6 +29,10 @@
     padding-left: 10px;
     padding-right: 5px;
     line-height: normal;
+}
+
+.geshi a {
+    text-decoration: none;
 }
 
 .geshi li.ln-xtra {
@@ -52,7 +56,7 @@
 
 .geshi .imp {
     font-weight: bold;
-    color: red;
+    color: #cc0000;
 }
 
 .geshi li, .geshi .li1 {
@@ -63,4 +67,42 @@
 .geshi .li2 {
     font-weight: bold;
     vertical-align: top;
+}
+
+/* PHP -----------------------------------------------------------------------*/
+.php .re0, /* variables */
+.php .es4 {
+    color: #6D3206;
+    font-weight: bold;
+}
+
+.php .kw3 { /* built-in functions */
+    color: #9933CC;
+    font-weight: bold;
+}
+.php .me1 { /* methods */
+    color: #009900;
+}
+
+.php .kw1 { /* keywords */
+    color: #0000E6;
+}
+
+.php .kw2,
+.php .sy1 {
+    font-weight: bold;
+}
+
+.php .st0, /* strings */
+.php .st_h {
+    color: #CE7B00;
+}
+
+.php .nu0 { /* numbers */
+    color: #FF00FF;
+}
+
+.php .co1, /* comments */
+.php .coMULTI {
+    color: #969696;
 }
