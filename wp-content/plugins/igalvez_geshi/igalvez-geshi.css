@@ -165,3 +165,13 @@
 .apache .nu0 { /* strings and numbers */
     color: #cb4b16;
 }
+
+/* INI -----------------------------------------------------------------------*/
+.ini .re0 { /* sections */
+    color: #d33682;
+    font-weight: bold;  
+}
+
+.ini .re1 { /* properties */
+    color: #2aa198;
+}
