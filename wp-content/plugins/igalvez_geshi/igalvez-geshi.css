@@ -2,18 +2,13 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700");
 
 /* GeSHi container -----------------------------------------------------------*/
-.geshi-header {
-    text-align: center;
-    background-color: #eee8d5;
-    color: #586e75;
-}
-
 .geshi {
     font-family: "Source Code Pro", monospace;
     font-size: 10pt;
     background-color: #fdf6e3;
     border-radius: 4px;
-    box-shadow: 2px 2px 1px #eee8d5;
+    border: 1px solid #eee8d5;
+    margin-bottom: 20px;
 }
 
 .geshi ol {
@@ -21,6 +16,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
+    margin: 0;
 }
 
 .geshi li {
@@ -42,7 +38,7 @@
 }
 
 .geshi li div {
-    color: #657b83; /* normal text */
+    color: #586e75; /* normal text */
     font-style: normal;
 }
 
@@ -96,7 +92,6 @@
 .php .kw2, /* other keywords */
 .php .sy1 {
     font-weight: bold;
-    color: #586e75;
 }
 
 .php .st0, /* strings and numbers */
@@ -108,7 +103,6 @@
 /* HTML ----------------------------------------------------------------------*/
 .html .sc0 { /* doctype */
     font-weight: bold;
-    color: #586e75;
 }
 
 .html .kw2 { /* tags */
