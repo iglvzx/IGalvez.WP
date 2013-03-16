@@ -145,14 +145,15 @@ div, p, a, img, pre, code {
     text-decoration: none;
 }
 
-code {
+.post p > code {
+    color: <?=$solarized_magenta?>;
+}
+
+.post p> code, a > code {
     font-family: "Source Code Pro", monospace;
     font-size: 13px;
-    padding: 2px 4px;
-    color: <?=$solarized_base03?>;
-    border-radius: 4px;
-    background-color: <?=$tango_aluminium2?>;
-    white-space: pre-wrap;
+    padding: 0 4px;
+    font-weight: bold;
 }
 
 .geshi .co1, /* comments */
@@ -181,6 +182,7 @@ code {
 
 .php .kw1 { /* main keywords */
     color: <?=$solarized_magenta?>;
+    font-weight: bold;
 }
 
 .php .kw2, /* other keywords */
@@ -230,8 +232,8 @@ code {
     color: <?=$solarized_blue?>;
 }
 
-.apache .st0,
-.apache .nu0 { /* strings and numbers */
+.apache .st0, /* strings and numbers */
+.apache .nu0 {
     color: <?=$solarized_yellow?>;
 }
 
