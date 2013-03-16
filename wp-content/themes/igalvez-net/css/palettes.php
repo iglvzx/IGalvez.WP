@@ -53,4 +53,11 @@ $tango_aluminium4  = "#888a85";
 $tango_aluminium5  = "#555753";
 $tango_aluminium6  = "#2e3436";
 
+/*
+"IGalvez.Net" palette.
+*/
+
+$igalvez_black = "#141414";
+$igalvez_white = "#f0f0f0";
+
 ?>
