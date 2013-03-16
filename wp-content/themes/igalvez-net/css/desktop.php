@@ -145,11 +145,11 @@ div, p, a, img, pre, code {
     text-decoration: none;
 }
 
-.post p > code {
+.post p > code, li > code {
     color: <?=$solarized_magenta?>;
 }
 
-.post p> code, a > code {
+.post p > code, a > code, li > code {
     font-family: "Source Code Pro", monospace;
     font-size: 13px;
     padding: 0 4px;
