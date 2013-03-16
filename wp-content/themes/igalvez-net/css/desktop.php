@@ -26,7 +26,7 @@ div, p, a, img, pre, code {
 }
 
 #wrapper {
-    background-color: <?=$tango_aluminium1?>;
+    background-color: <?=$igalvez_white?>;
     padding: 10px;
     border-radius: 4px;
     margin: 20px auto;
@@ -124,7 +124,7 @@ div, p, a, img, pre, code {
 
 #menu, .post, #page-nav {
     padding-bottom: 10px;
-    border-bottom: 1px solid <?=$tango_aluminium3?>;
+    border-bottom: 1px dashed <?=$tango_aluminium3?>;
     margin-bottom: 10px;
 }
 
@@ -145,11 +145,7 @@ div, p, a, img, pre, code {
     text-decoration: none;
 }
 
-.post p > code, li > code {
-    color: <?=$solarized_magenta?>;
-}
-
-.post p > code, a > code, li > code {
+.post code {
     font-family: "Source Code Pro", monospace;
     font-size: 13px;
     padding: 0 4px;
@@ -177,11 +173,11 @@ div, p, a, img, pre, code {
     font-weight: bold;
 }
 .php .me1 { /* methods */
-    color: <?=$solarized_green?>;
+    color: <?=$solarized_blue?>;
 }
 
 .php .kw1 { /* main keywords */
-    color: <?=$solarized_magenta?>;
+    color: <?=$solarized_green?>;
     font-weight: bold;
 }
 
@@ -202,20 +198,20 @@ div, p, a, img, pre, code {
 }
 
 .html .kw2 { /* tags */
-    color: <?=$solarized_blue?>;
+    color: <?=$solarized_green?>;
     font-weight: bold; 
 }
 
 .html .sc2 {
-    color: <?=$solarized_blue?>;
-}
-
-.html .sc1 { /* escaped chars, entities */
     color: <?=$solarized_green?>;
 }
 
+.html .sc1 { /* escaped chars, entities */
+    color: <?=$solarized_orange?>;
+}
+
 .html .kw3 { /* attributes */
-    color: <?=$solarized_magenta?>;
+    color: <?=$solarized_cyan?>;
 }
 
 .html .st0 { /* strings */
@@ -224,7 +220,7 @@ div, p, a, img, pre, code {
 
 /* Apache --------------------------------------------------------------------*/
 .apache .kw3 { /* tags */
-    color: <?=$solarized_magenta?>;
+    color: <?=$solarized_green?>;
     font-weight: bold; 
 }
 
@@ -239,7 +235,7 @@ div, p, a, img, pre, code {
 
 /* INI -----------------------------------------------------------------------*/
 .ini .re0 { /* sections */
-    color: <?=$solarized_magenta?>;
+    color: <?=$solarized_green?>;
     font-weight: bold;  
 }
 
