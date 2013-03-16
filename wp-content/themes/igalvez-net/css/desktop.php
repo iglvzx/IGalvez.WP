@@ -4,10 +4,14 @@ include 'palettes.php';
 ?>
 
 /* Google Web Fonts: Source Sans Pro */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic);
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic");
 
 /* Google Web Fonts: Source Code Pro */
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+@import url("http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700");
+
+html {
+    overflow-y: scroll; 
+}
 
 body {
     font-family: "Source Sans Pro", sans-serif;
@@ -54,11 +58,12 @@ div, p, a, img, pre, code {
     margin-bottom: 10px;
     border-bottom: 1px dotted <?=$tango_aluminium3?>;
     padding-bottom: 10px;
+    color: <?=$tango_aluminium5?>;
 }
 
 #menu a {
     font-weight: bold;
-    color: <?=$tango_scarletred3?>;
+    color: <?=$tango_skyblue3?>;
 }
 
 #footer {
@@ -78,17 +83,32 @@ div, p, a, img, pre, code {
     margin-bottom: 10px;
 }
 
+.post .title a {
+    color: <?=$tango_skyblue3?>;
+}
+
 .post .content p {
     margin-bottom: 20px;
 }
 
 .post .content a {
-    color: <?=$tango_scarletred3?>;
+    color: <?=$tango_skyblue3?>;
 }
 
 .post .content img {
     display: block;
     margin-bottom: 20px;
+}
+
+.post .content ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.post .content li {
+    padding: 0;
+    margin: 0;
 }
 
 .post .meta {
@@ -101,7 +121,20 @@ div, p, a, img, pre, code {
     font-weight: bold;
 }
 
-pre {
+.post .meta span {
+    font-weight: bold;
+}
+
+#page-nav {
+    color: <?=$tango_aliminium5?>;
+}
+
+#page-nav a {
+    color: <?=$tango_skyblue3?>;
+    font-weight: bold;
+}
+
+.geshi {
     font-family: "Source Code Pro", monospace;
     font-size: 13px;
     padding: 10px;
@@ -109,6 +142,10 @@ pre {
     color: <?=$solarized_base0?>;
     border-radius: 4px;
     margin-bottom: 20px;
+}
+
+.geshi .de1 a {
+    color: <?=$solarized_base0?>;
 }
 
 code {

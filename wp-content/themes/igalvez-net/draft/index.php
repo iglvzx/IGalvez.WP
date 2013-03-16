@@ -12,10 +12,15 @@
             </div>
             
             <div id="menu">
-                <a href="#">Home</a> /
-                <a href="#">About</a> /
-                <a href="#">Projects</a> /
-                <a href="#">Contact</a>
+                <a href="#">Home</a> |
+                <a href="#">About</a> |
+                <a href="#">Projects</a> |
+                <a href="#">Contact</a> |
+                Blog:
+                <a href="#">Archives</a> |
+                <a href="#">Categories</a> |
+                <a href="#">Tags</a> |
+                <a href="#">Search</a>
             </div>
             
             <div class="post">
@@ -51,14 +56,14 @@ NameVirtualHost *:80
                     <p>Ut sem est, facilisis sit amet congue et, vulputate nec leo. Praesent commodo vehicula tortor, sit amet elementum mi laoreet sed. Morbi ullamcorper diam eu neque aliquam aliquet. Aliquam justo nisl, venenatis tincidunt dapibus id, egestas vitae eros. Nulla molestie tincidunt libero, vel ullamcorper metus ultrices sed. Cras varius dui a magna facilisis vel volutpat nunc suscipit. Ut luctus, lectus sed vestibulum vehicula, lorem justo luctus magna, nec eleifend dui nunc a purus.</p>
                 </div>
                 <div class="meta">
-                    <div>Post ID: <a href="#">10</a> / Date: <a href="#">2013-06-04</a></div>
-                    <div>Category: <a href="#">PHP</a> / Tags: <a href="#">template</a>, <a href="#">code</a>, <a href="#">self</a></div>
+                    <div>Post ID: <a href="#">10</a> | Date: <a href="#">2013-06-04</a></div>
+                    <div>Category: <a href="#">PHP</a> | Tags: <a href="#">template</a>, <a href="#">code</a>, <a href="#">self</a></div>
                     <div>Feedback: <a href="#" title="View and Leave Comments">1 Comment</a></div>
                 </div>
             </div>       
             
             <div id="footer">
-                &copy; 2013 Israel Galvez. All rights reserved.
+                &copy; 2013 Israel Galvez. All rights reserved. |
                 Powered by: HostGator, eNom, WordPress, GeSHi.
             </div>
         </div>
