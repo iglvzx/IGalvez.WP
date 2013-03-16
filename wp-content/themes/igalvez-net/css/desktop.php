@@ -3,12 +3,6 @@ header("Content-type: text/css; charset: UTF-8");
 include 'palettes.php';
 ?>
 
-/* Google Web Fonts: Source Sans Pro */
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic");
-
-/* Google Web Fonts: Source Code Pro */
-@import url("http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700");
-
 html {
     overflow-y: scroll; 
 }
@@ -55,9 +49,6 @@ div, p, a, img, pre, code {
 }
 
 #menu {
-    margin-bottom: 10px;
-    border-bottom: 1px dotted <?=$tango_aluminium3?>;
-    padding-bottom: 10px;
     color: <?=$tango_aluminium5?>;
 }
 
@@ -72,9 +63,6 @@ div, p, a, img, pre, code {
 }
 
 .post {
-    margin-bottom: 10px;
-    border-bottom: 1px dotted <?=$tango_aluminium3?>;
-    padding-bottom: 10px;
 }
 
 .post .title {
@@ -134,18 +122,27 @@ div, p, a, img, pre, code {
     font-weight: bold;
 }
 
+#menu, .post, #page-nav {
+    padding-bottom: 10px;
+    border-bottom: 1px solid <?=$tango_aluminium3?>;
+    margin-bottom: 10px;
+}
+
+/* Code Formatting -----------------------------------------------------------*/
+
 .geshi {
     font-family: "Source Code Pro", monospace;
     font-size: 13px;
     padding: 10px;
     background-color: <?=$solarized_base03?>;
-    color: <?=$solarized_base0?>;
+    color: <?=$solarized_base1?>;
     border-radius: 4px;
     margin-bottom: 20px;
 }
 
 .geshi .de1 a {
-    color: <?=$solarized_base0?>;
+    color: <?=$solarized_base1?>;
+    text-decoration: none;
 }
 
 code {
@@ -156,4 +153,94 @@ code {
     border-radius: 4px;
     background-color: <?=$tango_aluminium2?>;
     white-space: pre-wrap;
+}
+
+.geshi .co1, /* comments */
+.geshi .coMULTI {
+    color: <?=$solarized_base01?>;
+}
+
+.geshi li.ln-xtra {
+    background-color: <?=$solarized_base02?>;
+    padding: 2px 4px;
+}
+
+/* PHP -----------------------------------------------------------------------*/
+.php .re0, /* variables */
+.php .es4 {
+    color: <?=$solarized_blue?>;
+}
+
+.php .kw3 { /* built-in functions */
+    color: <?=$solarized_cyan?>;
+    font-weight: bold;
+}
+.php .me1 { /* methods */
+    color: <?=$solarized_green?>;
+}
+
+.php .kw1 { /* main keywords */
+    color: <?=$solarized_magenta?>;
+}
+
+.php .kw2, /* other keywords */
+.php .sy1 {
+    font-weight: bold;
+}
+
+.php .st0, /* strings and numbers */
+.php .st_h,
+.php .nu0 {
+    color: <?=$solarized_yellow?>;
+}
+
+/* HTML ----------------------------------------------------------------------*/
+.html .sc0 { /* doctype */
+    font-weight: bold;
+}
+
+.html .kw2 { /* tags */
+    color: <?=$solarized_blue?>;
+    font-weight: bold; 
+}
+
+.html .sc2 {
+    color: <?=$solarized_blue?>;
+}
+
+.html .sc1 { /* escaped chars, entities */
+    color: <?=$solarized_green?>;
+}
+
+.html .kw3 { /* attributes */
+    color: <?=$solarized_magenta?>;
+}
+
+.html .st0 { /* strings */
+    color: <?=$solarized_yellow?>;
+}
+
+/* Apache --------------------------------------------------------------------*/
+.apache .kw3 { /* tags */
+    color: <?=$solarized_magenta?>;
+    font-weight: bold; 
+}
+
+.apache .kw1 { /* properties */
+    color: <?=$solarized_blue?>;
+}
+
+.apache .st0,
+.apache .nu0 { /* strings and numbers */
+    color: <?=$solarized_yellow?>;
+}
+
+/* INI -----------------------------------------------------------------------*/
+.ini .re0 { /* sections */
+    color: <?=$solarized_magenta?>;
+    font-weight: bold;  
+}
+
+.ini .re1 { /* properties */
+    color: <?=$solarized_blue?>;
 }

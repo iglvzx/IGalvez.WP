@@ -5,7 +5,13 @@
     <div <?php post_class(); ?>>
     
         <div class="title">
-            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            <a href="<?php the_permalink(); ?>">
+                <?php
+                $category = get_the_category($id);
+                $category = $category[0]->cat_name;
+                echo $category;
+                ?>: <?php the_title(); ?>
+            </a>
         </div>
         
         <div class="content">
@@ -29,8 +35,10 @@
 
 <?php endif; ?>
 
+<?php if(!is_single()) { ?>
 <div id="page-nav">
     <?php posts_nav_link(' | ', 'Newer Posts', 'Older Posts'); ?>
 </div>
+<?php } ?>
 
 <?php get_footer(); ?>

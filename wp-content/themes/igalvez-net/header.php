@@ -3,7 +3,13 @@
     <head>
         <title><?php bloginfo('name'); ?><?php wp_title('|', true); ?></title>
         
-        <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/desktop.php"/>
+       
+        <!-- Google Web Fonts -->
+            <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic"/>
+            <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700"/>
+        <!-- /Google Web Fonts -->
+        
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
