@@ -88,17 +88,6 @@ div, p, a, img, pre, code {
     margin-bottom: 20px;
 }
 
-.post .content ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.post .content li {
-    padding: 0;
-    margin: 0;
-}
-
 .post .meta {
     font-size: 13px;
     color: <?=$tango_plum2?>;
@@ -114,7 +103,7 @@ div, p, a, img, pre, code {
 }
 
 #page-nav {
-    color: <?=$tango_aliminium5?>;
+    color: <?=$tango_aluminium5?>;
 }
 
 #page-nav a {
@@ -135,9 +124,25 @@ div, p, a, img, pre, code {
     font-size: 13px;
     padding: 10px;
     background-color: <?=$solarized_base03?>;
-    color: <?=$solarized_base1?>;
     border-radius: 4px;
     margin-bottom: 20px;
+}
+
+.geshi ol {
+    list-style: decimal outside none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 30px;
+}
+
+.geshi li {
+    color: <?=$solarized_base01?>;
+    padding: 0 10px;
+}
+
+.geshi .de1 {
+    color: <?=$solarized_base1?>;
+    
 }
 
 .geshi .de1 a {
@@ -159,7 +164,6 @@ div, p, a, img, pre, code {
 
 .geshi li.ln-xtra {
     background-color: <?=$solarized_base02?>;
-    padding: 2px 4px;
 }
 
 /* PHP -----------------------------------------------------------------------*/

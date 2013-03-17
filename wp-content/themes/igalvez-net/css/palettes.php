@@ -58,6 +58,7 @@ $tango_aluminium6  = "#2e3436";
 */
 
 $igalvez_black = "#141414";
-$igalvez_white = "#f0f0f0";
+$igalvez_white = "#f8f8f8";
+$igalvez_gray  = "#dedede";
 
 ?>
