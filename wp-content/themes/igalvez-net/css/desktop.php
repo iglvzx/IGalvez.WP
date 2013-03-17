@@ -63,6 +63,16 @@ div, p, a, img, pre, code {
 }
 
 .post {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.post.odd {
+}
+
+.post.even {
+    background-color: <?=$igalvez_gray?>;
 }
 
 .post .title {
@@ -104,6 +114,8 @@ div, p, a, img, pre, code {
 
 #page-nav {
     color: <?=$tango_aluminium5?>;
+    border-top: 1px dashed <?=$tango_aluminium3?>;
+    padding-top: 10px;
 }
 
 #page-nav a {
@@ -111,7 +123,7 @@ div, p, a, img, pre, code {
     font-weight: bold;
 }
 
-#menu, .post, #page-nav {
+#menu, #page-nav {
     padding-bottom: 10px;
     border-bottom: 1px dashed <?=$tango_aluminium3?>;
     margin-bottom: 10px;
