@@ -4,7 +4,8 @@ include 'palettes.php';
 ?>
 
 html {
-    overflow-y: scroll; 
+    overflow-y: scroll;
+    -webkit-text-size-adjust: none;
 }
 
 body {
@@ -96,6 +97,8 @@ div, p, a, img, pre, code {
 .post .content img {
     display: block;
     margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
 }
 
 .post .meta {
@@ -130,7 +133,7 @@ div, p, a, img, pre, code {
 }
 
 /* Collapse to Width=100% for small screens */
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 860px), screen and (max-device-width: 480px) {
     #wrapper {
         border-radius: 0;
         margin: 0;
@@ -154,6 +157,10 @@ div, p, a, img, pre, code {
         padding-right: 10px;
         padding-bottom: 10px;
     }
+    
+    .post {
+        border-radius: 0;
+    }
 }
 
 /* Code Formatting -----------------------------------------------------------*/
@@ -171,7 +178,7 @@ div, p, a, img, pre, code {
     list-style: decimal outside none;
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 30px;
+    padding-left: 35px;
 }
 
 .geshi li {
@@ -181,7 +188,8 @@ div, p, a, img, pre, code {
 
 .geshi .de1 {
     color: <?=$solarized_base1?>;
-    
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 .geshi .de1 a {
