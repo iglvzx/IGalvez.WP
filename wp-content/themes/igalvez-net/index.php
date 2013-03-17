@@ -11,8 +11,9 @@
                 <?php
                 $category = get_the_category($id);
                 $category = $category[0]->cat_name;
-                echo $category;
-                ?>: <?php the_title(); ?>
+                echo $category . ': ';
+                the_title();
+                ?>
             </a>
         </div>
         
@@ -35,13 +36,12 @@
     <?php $count++; ?>
 
 <?php endwhile; else: ?>
-
 <?php endif; ?>
 
-<?php if(!is_single()) { ?>
-<div id="page-nav">
-    <?php posts_nav_link(' | ', 'Newer Posts', 'Older Posts'); ?>
-</div>
+<?php if(is_paged()) { ?>
+    <div id="page-nav">
+        <?php posts_nav_link(' | ', 'Newer Posts', 'Older Posts'); ?>
+    </div>
 <?php } ?>
 
 <?php get_footer(); ?>

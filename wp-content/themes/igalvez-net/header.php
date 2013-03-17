@@ -27,7 +27,7 @@
             <a href="<?php bloginfo('wpurl'); ?>">Home</a> |
             <a href="#">About</a> |
             <a href="#">Projects</a> |
-            <a href="#">Contact</a> |
+            <a href="<?php bloginfo('wpurl'); ?>/contact/">Contact</a> |
             Blog:
             <a href="#">Archives</a> |
             <a href="#">Categories</a> |

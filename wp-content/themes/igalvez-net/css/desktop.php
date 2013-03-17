@@ -88,6 +88,7 @@ div, p, a, img, pre, code {
 
 .post .content p {
     margin-bottom: 20px;
+    word-wrap: break-word;
 }
 
 .post .content a {
@@ -99,6 +100,25 @@ div, p, a, img, pre, code {
     margin-bottom: 20px;
     max-width: 100%;
     height: auto;
+}
+
+.post .content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 17px;
+}
+
+.post .content ul {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.post .content ul ul {
+    margin: 0;
 }
 
 .post .meta {
@@ -117,7 +137,7 @@ div, p, a, img, pre, code {
 
 #page-nav {
     color: <?=$tango_aluminium5?>;
-    border-top: 1px dashed <?=$tango_aluminium3?>;
+    border-top: 1px solid <?=$tango_aluminium2?>;
     padding-top: 10px;
 }
 
@@ -126,10 +146,16 @@ div, p, a, img, pre, code {
     font-weight: bold;
 }
 
-#menu, #page-nav {
+#menu {
     padding-bottom: 10px;
-    border-bottom: 1px dashed <?=$tango_aluminium3?>;
+    border-bottom: 1px solid <?=$tango_aluminium2?>;
     margin-bottom: 10px;
+}
+
+#footer {
+    padding-top: 10px;
+    border-top: 1px solid <?=$tango_aluminium2?>;
+    margin-top: 10px;
 }
 
 /* Collapse to Width=100% for small screens */
