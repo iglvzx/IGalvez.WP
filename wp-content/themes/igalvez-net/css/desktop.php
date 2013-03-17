@@ -129,6 +129,33 @@ div, p, a, img, pre, code {
     margin-bottom: 10px;
 }
 
+/* Collapse to Width=100% for small screens */
+@media screen and (max-width: 860px) {
+    #wrapper {
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    #header {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #menu, #page-nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #footer {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+}
+
 /* Code Formatting -----------------------------------------------------------*/
 
 .geshi {
