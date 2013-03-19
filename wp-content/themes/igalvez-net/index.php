@@ -31,7 +31,7 @@
                 <?php the_tags('| Tags: ', ', '); ?>
             </div>
             <div>
-                Feedback: <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
+                Feedback: <a href="<?php the_permalink(); ?>#feedback"><?php comments_number(); ?></a>
             </div>
         </div>
     
@@ -43,7 +43,7 @@
 
 <?php // Comments for a post or page
 if(is_single()) {
-    echo '<div id="post-comments">';
+    echo '<div id="feedback">';
     comments_template();
     echo '</div>';
 }

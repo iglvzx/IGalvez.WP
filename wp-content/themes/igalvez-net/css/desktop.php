@@ -165,7 +165,7 @@ div, p, a, img, pre, code {
     font-weight: bold;
 }
 
-#post-comments {
+#feedback {
     margin-top: 10px;
     padding-top: 10px;
     border-top: 1px solid <?=$tango_aluminium2?>;
@@ -206,8 +206,12 @@ cite {
     padding-bottom: 0;
 }
 
-#post-comments a {
+#feedback a {
     color: <?=$tango_skyblue3?>;
+}
+
+.comment-body p {
+    margin-bottom: 20px;
 }
 
 #respond {
