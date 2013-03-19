@@ -193,7 +193,7 @@ div, p, a, img, pre, code {
         padding-bottom: 10px;
     }
     
-    .post {
+    .post, .comment {
         border-radius: 0;
     }
 }

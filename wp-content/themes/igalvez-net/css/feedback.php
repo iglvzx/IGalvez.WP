@@ -27,7 +27,7 @@
     padding-bottom: 20px;
 }
 
-.comment.even {
+.comment.odd {
     background-color: <?=$igalvez_gray?>;
 }
 
