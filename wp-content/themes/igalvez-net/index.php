@@ -43,9 +43,7 @@
 
 <?php // Comments for a post or page
 if(is_single()) {
-    echo '<div id="feedback">';
     comments_template();
-    echo '</div>';
 }
 ?>
 
