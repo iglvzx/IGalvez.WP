@@ -165,6 +165,97 @@ div, p, a, img, pre, code {
     font-weight: bold;
 }
 
+#post-comments {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid <?=$tango_aluminium2?>;
+}
+
+#comments {
+    display: none;
+}
+
+.commentlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.commentlist li {
+    border-bottom: 1px solid <?=$tango_aluminium2?>;
+    padding: 10px;
+}
+
+.comment-meta {
+    font-size: 13px;
+}
+
+cite {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.commentlist li ul {
+    list-style: none;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.commentlist li li {
+    border: 0;
+    padding-bottom: 0;
+}
+
+#post-comments a {
+    color: <?=$tango_skyblue3?>;
+}
+
+#respond {
+    padding: 10px;
+}
+
+#respond h3 {
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-right: 0;
+    color: <?=$tango_aluminium6?>;
+    font-size: 17px;
+}
+
+#respond textarea, #respond input {
+    -webkit-appearance: none;
+    margin-bottom: 10px;
+    font-family: "Souce Code Pro", monospace;
+    font-size: 13px;
+    padding: 5px;
+}
+
+#respond label {
+    margin-left: 10px;
+    color: <?=$tango_aluminium5?>;
+    display: inline-block;
+}
+
+#respond label small {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#respond textarea {
+    height: 100px;
+    width: -moz-calc(100% - 10px);
+    width: -webkit-calc(100% - 10px);
+    width: calc(100% - 10px);
+}
+
+#commentform p input#submit {
+    margin-bottom: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 13px;
+}
+
 /* Collapse to Width=100% for small screens */
 @media screen and (max-width: 860px), screen and (max-device-width: 480px) {
     #wrapper {

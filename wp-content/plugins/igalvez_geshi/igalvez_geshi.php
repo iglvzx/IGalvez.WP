@@ -9,11 +9,12 @@ Author URI: http://igalvez.net/
 License: GPL v3
 */
 
-// Create GeSHi [sourcecode lang="$lang" lines="1,2,3..."] shortcode
+// Create GeSHi [sourcecode lang="$lang" start="$n" lines="1,2,3..."] shortcode
 function igalvez_geshi($atts, $content = null) {
     extract(shortcode_atts(array(
 		'lang' => 'text', // source code language -- default to plain text
-        'lines' => false, // lines to highlight -- default to false 
+        'lines' => false, // lines to highlight -- default to false
+        'start' => 1 // starting line number -- default to 1
 	), $atts));
     
     $content = trim($content); // remove whitespace at ends
@@ -33,14 +34,10 @@ function igalvez_geshi($atts, $content = null) {
         $geshi->highlight_lines_extra($LINES);
     }
     
+    // set starting line number
+    $geshi->start_line_numbers_at((int) $start);
+    
     return $geshi->parse_code();
 }
 add_shortcode('sourcecode', 'igalvez_geshi');
-
-// Add GeSHi stylesheet to WordPress
-add_action('wp_enqueue_scripts', 'add_igalvez_geshi_css');
-function add_igalvez_geshi_css() {
-    wp_register_style('igalvez-geshi', plugins_url('igalvez-geshi.css', __FILE__));
-    wp_enqueue_style('igalvez-geshi');
-}
 ?>

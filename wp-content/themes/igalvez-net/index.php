@@ -30,6 +30,9 @@
                 Category: <?php the_category(', '); ?>
                 <?php the_tags('| Tags: ', ', '); ?>
             </div>
+            <div>
+                Feedback: <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
+            </div>
         </div>
     
     </div><!-- /post -->
@@ -38,10 +41,21 @@
 <?php endwhile; else: ?>
 <?php endif; ?>
 
-<?php if(is_paged()) { ?>
-    <div id="page-nav">
-        <?php posts_nav_link(' | ', 'Newer Posts', 'Older Posts'); ?>
-    </div>
-<?php } ?>
+<?php // Comments for a post or page
+if(is_single()) {
+    echo '<div id="post-comments">';
+    comments_template();
+    echo '</div>';
+}
+?>
+
+<?php // Links between pages of posts
+$posts_nav = get_posts_nav_link();
+if(!empty($posts_nav)) {
+    echo '<div id="page-nav">';
+    posts_nav_link(' | ', 'Newer Posts', 'Older Posts');
+    echo '</div>';
+}
+?>
 
 <?php get_footer(); ?>
