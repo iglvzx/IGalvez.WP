@@ -1,5 +1,4 @@
 /* GeSHi ---------------------------------------------------------------------*/
-
 .geshi {
     font-family: "Source Code Pro", monospace;
     font-size: 13px;
@@ -33,7 +32,8 @@
 }
 
 .geshi .co1, /* comments */
-.geshi .coMULTI {
+.geshi .coMULTI,
+.geshi .c04 {
     color: <?=$solarized_base01?>;
 }
 
