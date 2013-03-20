@@ -158,10 +158,9 @@ div, p, a, img, pre, code {
     margin-top: 10px;
 }
 
-.post code {
+.post code, .comment code {
     font-family: "Source Code Pro", monospace;
     font-size: 13px;
-    padding: 0 4px;
     font-weight: bold;
 }
 
