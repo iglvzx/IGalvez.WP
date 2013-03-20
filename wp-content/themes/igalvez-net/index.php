@@ -31,7 +31,15 @@
                 <?php the_tags('| Tags: ', ', '); ?>
             </div>
             <div>
-                Feedback: <a href="<?php the_permalink(); ?>#feedback"><?php comments_number(); ?></a>
+                <?php
+                $comments = get_comments_number($id);
+                if($comments == 0) { // no comments
+                    $comments_url = get_permalink($id) . '#respond';
+                } else {
+                    $comments_url = get_permalink($id) . '#feedback';
+                }
+                ?>
+                Feedback: <a href="<?php echo $comments_url; ?>"><?php comments_number(); ?></a>
             </div>
         </div>
     
