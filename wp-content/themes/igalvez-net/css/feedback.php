@@ -155,3 +155,11 @@ input#submit {
 input#submit:active, input#submit:hover {
     background-color: <?=$tango_aluminium6?>;
 }
+
+#respond .logged-in-as {
+    margin-bottom: 10px;
+}
+
+#respond .logged-in-as a {
+    color: <?=$tango_skyblue3?>;
+}
