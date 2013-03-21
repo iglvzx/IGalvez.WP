@@ -2,7 +2,19 @@
 <html <?php language_attributes(); ?>>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <title><?php bloginfo('name'); ?><?php wp_title('|', true); ?></title>
+        <title>
+            <?php
+            bloginfo('name');
+            if (is_single())
+            {
+                $category = get_the_category();
+                echo ' | ' . $category[0]->cat_name . ': ';
+                wp_title('', true);
+            } else {
+                wp_title('|', true);
+            }
+            ?>
+        </title>
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
         
