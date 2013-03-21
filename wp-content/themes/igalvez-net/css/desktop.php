@@ -97,7 +97,6 @@ div, p, a, img, pre, code {
 
 .post .content img {
     display: block;
-    margin-bottom: 20px;
     max-width: 100%;
     height: auto;
 }
