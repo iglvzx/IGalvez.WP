@@ -161,6 +161,7 @@ div, p, a, img, pre, code {
     font-family: "Source Code Pro", monospace;
     font-size: 13px;
     font-weight: bold;
+    padding: 0 4px;
 }
 
 <?php include 'feedback.php'; ?>
