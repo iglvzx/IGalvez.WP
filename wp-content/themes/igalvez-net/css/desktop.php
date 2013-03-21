@@ -101,7 +101,7 @@ div, p, a, img, pre, code {
     height: auto;
 }
 
-.post .content h3 {
+.post .content h3, .post .content h4 {
     margin-top: 0;
     margin-bottom: 10px;
     margin-left: 0;
