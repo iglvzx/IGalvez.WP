@@ -88,7 +88,7 @@
 
 #respond label {
     display: block;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
     color: <?=$tango_aluminium5?>;
 }
 
