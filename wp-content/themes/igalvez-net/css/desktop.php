@@ -180,7 +180,11 @@ div, p, a, img, pre, code {
     font-family: "Source Code Pro", monospace;
     font-size: 13px;
     font-weight: bold;
-    padding: 0 4px;
+    padding: 0 2px;
+}
+
+.post a code {
+    padding: 0;
 }
 
 <?php include 'feedback.php'; ?>
