@@ -1,7 +1,7 @@
 #feedback {
     padding-top: 10px;
     margin-top: 10px;
-    border-top: 1px solid <?=$tango_aluminium2?>;
+    border-top: 1px dotted <?=$tango_aluminium4?>;
 }
 
 #comment-list {
@@ -21,6 +21,10 @@
 
 .comment a {
     color: <?=$tango_skyblue3?>;
+}
+
+.comment a:hover {
+    border-bottom: 1px dotted <?=$tango_skyblue3?>;
 }
 
 .comment p {
@@ -66,7 +70,7 @@
 #respond {
     margin-top: 10px;
     padding: 10px;
-    border-top: 1px solid <?=$tango_aluminium2?>;
+    border-top: 1px dotted <?=$tango_aluminium4?>;
 }
 
 #respond h3 {
@@ -162,4 +166,8 @@ input#submit:active, input#submit:hover {
 
 #respond .logged-in-as a {
     color: <?=$tango_skyblue3?>;
+}
+
+#respond .logged-in-as a:hover {
+    border-bottom: 1px dotted <?=$tango_skyblue3?>;
 }

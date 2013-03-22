@@ -29,6 +29,11 @@
 .geshi .de1 a {
     color: <?=$solarized_base1?>;
     text-decoration: none;
+    border-bottom: 1px dotted <?=$solarized_base01?>;
+}
+
+.geshi .de1 a:hover {
+    border-bottom: 1px dotted <?=$solarized_base01?>;
 }
 
 .geshi .co1, /* comments */

@@ -5,7 +5,6 @@ include 'palettes.php';
 
 html {
     overflow-y: scroll;
-    -webkit-text-size-adjust: none;
 }
 
 body {
@@ -58,6 +57,10 @@ div, p, a, img, pre, code {
     color: <?=$tango_skyblue3?>;
 }
 
+#menu a:hover {
+    border-bottom: 1px dotted <?=$tango_skyblue3?>;
+}
+
 #footer {
     font-size: 13px;
     color: <?=$tango_aluminium4?>;
@@ -86,6 +89,10 @@ div, p, a, img, pre, code {
     color: <?=$tango_skyblue3?>;
 }
 
+.post .title a:hover {
+    border-bottom: 1px dotted <?=$tango_skyblue3?>;
+}
+
 .post .content p {
     padding-bottom: 20px;
     word-wrap: break-word;
@@ -93,6 +100,10 @@ div, p, a, img, pre, code {
 
 .post .content a {
     color: <?=$tango_skyblue3?>;
+}
+
+.post .content a:hover {
+    border-bottom: 1px dotted <?=$tango_skyblue3?>;
 }
 
 .post .content img {
@@ -130,13 +141,17 @@ div, p, a, img, pre, code {
     font-weight: bold;
 }
 
+.post .meta a:hover {
+    border-bottom: 1px dotted <?=$tango_plum2?>;
+}
+
 .post .meta span {
     font-weight: bold;
 }
 
 #page-nav {
     color: <?=$tango_aluminium5?>;
-    border-top: 1px solid <?=$tango_aluminium2?>;
+    border-top: 1px dotted <?=$tango_aluminium4?>;
     padding-top: 10px;
 }
 
@@ -145,15 +160,19 @@ div, p, a, img, pre, code {
     font-weight: bold;
 }
 
+#page-nav a:hover {
+    border-bottom: 1px dotted <?=$tango_skyblue3?>;
+}
+
 #menu {
     padding-bottom: 10px;
-    border-bottom: 1px solid <?=$tango_aluminium2?>;
+    border-bottom: 1px dotted <?=$tango_aluminium4?>;
     margin-bottom: 10px;
 }
 
 #footer {
     padding-top: 10px;
-    border-top: 1px solid <?=$tango_aluminium2?>;
+    border-top: 1px dotted <?=$tango_aluminium4?>;
     margin-top: 10px;
 }
 
