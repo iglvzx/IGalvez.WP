@@ -189,8 +189,11 @@ div, p, a, img, pre, code {
 
 #adsense-footer {
     padding-top: 10px;
+    margin-top: 10px;
+    height: 60px;
     border-top: 1px dotted <?=$tango_aluminium4?>;
     overflow: hidden;
+    text-align: center;
 }
 
 <?php include 'feedback.php'; ?>

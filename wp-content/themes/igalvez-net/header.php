@@ -26,6 +26,7 @@
         <!-- WordPress header -->
             <?php wp_head(); ?>
         <!-- /WordPress header -->
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     </head>
     <body <?php body_class(); ?>>
         <div id="wrapper">

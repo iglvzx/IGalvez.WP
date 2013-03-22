@@ -31,6 +31,10 @@
     text-decoration: none;
 }
 
+.geshi .de1 a:hover {
+    border-bottom: 0;
+}
+
 .geshi .co1, /* comments */
 .geshi .coMULTI,
 .geshi .c04 {

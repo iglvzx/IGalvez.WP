@@ -39,7 +39,7 @@
     padding-left: 20px;
     padding-top: 0;
     padding-right: 0;
-    paddign-bottom: 0;
+    padding-bottom: 0;
     list-style: none;
 }
 
