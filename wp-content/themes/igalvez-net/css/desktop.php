@@ -187,6 +187,12 @@ div, p, a, img, pre, code {
     padding: 0;
 }
 
+#adsense-footer {
+    padding-top: 10px;
+    border-top: 1px dotted <?=$tango_aluminium4?>;
+    overflow: hidden;
+}
+
 <?php include 'feedback.php'; ?>
 
 /* Collapse to Width=100% for small screens */

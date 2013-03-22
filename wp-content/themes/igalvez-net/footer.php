@@ -1,3 +1,4 @@
+            <?php include 'adsense-footer.php'?>
             <div id="footer">
                 &copy; 2011-<?php echo date('Y'); ?> Israel Galvez.
                 All rights reserved. |
