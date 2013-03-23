@@ -16,11 +16,11 @@ $query = isset($_GET['q']) ? $_GET['q'] : '';
 
 <form id="search-form" method="GET" action="<?php bloginfo('wpurl'); ?>/search/">
     <p id="search-box">
-        <label for="query">Query</label>
+        <label for="query">Query</label><span id="google-branding"><img id="google-logo" src="http://www.google.com/uds/css/small-logo.png"/>Custom Search</span>
         <input id="query" name="q" type="text" value="<?php echo $query; ?>"/>
     </p>
     <p>
-        <input type="submit" id="submit" value="Search" name="submit"/>
+        <input type="submit" id="submit" value="Search"/>
     </p>
 </form>        
 
@@ -39,6 +39,16 @@ $query = isset($_GET['q']) ? $_GET['q'] : '';
 </script>
 <gcse:searchresults-only></gcse:searchresults-only>
 </div><!-- /#google-search -->
+
+<script type="text/javascript">
+$(window).load(function() {
+    var height = $("#google-search").height();
+
+    if(height > 0) {
+        $("#search-form").css("margin-bottom", "20px");
+    }
+});
+</script>
 
     </div><!-- /post -->
 

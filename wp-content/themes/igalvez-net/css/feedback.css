@@ -177,5 +177,21 @@ input#submit:active, input#submit:hover {
 
 #search-form {
     display: block;
-    margin-bottom: 20px;
+}
+
+#search-box {
+    position: relative;
+}
+
+#google-branding {
+    font-size: 11px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: <?=$tango_aluminium4?>;
+}
+
+#google-logo {
+    vertical-align: middle;
 }

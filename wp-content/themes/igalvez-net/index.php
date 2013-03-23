@@ -21,12 +21,6 @@
             <?php the_content(); ?>
         </div>
         
-        <?php
-        if(is_single()) {
-            include 'adsense-related.php';
-        }
-        ?>
-        
         <div class="meta">
             <div>
                 Post ID: <span><?php the_id(); ?></span> |
