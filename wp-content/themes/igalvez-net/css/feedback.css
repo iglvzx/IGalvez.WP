@@ -90,7 +90,8 @@
     color: <?=$tango_scarletred2?>;
 }
 
-#respond label {
+#respond label,
+#search-form label {
     display: block;
     padding-bottom: 5px;
     color: <?=$tango_aluminium5?>;
@@ -104,7 +105,8 @@
 .comment-form-author,
 .comment-form-email,
 .comment-form-url,
-.comment-form-comment {
+.comment-form-comment,
+#search-box {
     display: block;
     background-color: #ffffff;
     width: auto;
@@ -115,7 +117,8 @@
 }
 
 #respond input[type="text"],
-#respond textarea {
+#respond textarea,
+#search-form input[type="text"] {
     padding: 0;
     border: 0;
     margin: 0;
@@ -170,4 +173,9 @@ input#submit:active, input#submit:hover {
 
 #respond .logged-in-as a:hover {
     border-bottom: 1px dotted <?=$tango_skyblue3?>;
+}
+
+#search-form {
+    display: block;
+    margin-bottom: 20px;
 }

@@ -45,5 +45,5 @@
             <a href="#">Archives</a> |
             <a href="#">Categories</a> |
             <a href="#">Tags</a> |
-            <a href="#">Search</a>
+            <a href="<?php bloginfo('wpurl'); ?>/search/">Search</a>
         </div>

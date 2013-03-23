@@ -9,12 +9,20 @@ Template Name: Google Search
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
    
     <div <?php post_class('post'); ?>>
-    
-        <div class="title">
-            <a href="<?php the_permalink(); ?>">
-                <?php the_title(); ?>
-            </a>
-        </div>
+
+<?php
+$query = isset($_GET['q']) ? $_GET['q'] : '';
+?>
+
+<form id="search-form" method="GET" action="<?php bloginfo('wpurl'); ?>/search/">
+    <p id="search-box">
+        <label for="query">Query</label>
+        <input id="query" name="q" type="text" value="<?php echo $query; ?>"/>
+    </p>
+    <p>
+        <input type="submit" id="submit" value="Search" name="submit"/>
+    </p>
+</form>        
 
 <div id="google-search">        
 <script>
