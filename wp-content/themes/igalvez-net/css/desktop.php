@@ -93,6 +93,10 @@ div, p, a, img, pre, code {
     margin-bottom: 10px;
 }
 
+.post .title.error {
+    color: <?=$tango_scarletred2?>;
+}
+
 .post .title a {
     color: <?=$tango_skyblue3?>;
 }

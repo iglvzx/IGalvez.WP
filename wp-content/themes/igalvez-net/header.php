@@ -5,11 +5,12 @@
         <title>
             <?php
             bloginfo('name');
-            if (is_single())
-            {
+            if (is_single()) {
                 $category = get_the_category();
                 echo ' | ' . $category[0]->cat_name . ': ';
                 wp_title('', true);
+            } else if(is_404()) {
+                echo ' |  Error 404: File Not Found';
             } else {
                 wp_title('|', true);
             }
