@@ -132,14 +132,14 @@ div, p, a, img, pre, code {
     font-size: 17px;
 }
 
-.post .content ul, .post .content ol {
+.post .content > ul, .post .content > ol {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 20px;
 }
 
-.post .content ul ul, .post .content ol ul {
+.post .content > ul ul, .post .content > ol ul {
     margin: 0;
 }
 

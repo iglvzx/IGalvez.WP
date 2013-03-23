@@ -14,6 +14,9 @@
             } else {
                 wp_title('|', true);
             }
+            if(is_paged()) {
+                echo " | Page $paged";
+            }
             ?>
         </title>
         
