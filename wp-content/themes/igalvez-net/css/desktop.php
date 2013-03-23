@@ -143,6 +143,13 @@ div, p, a, img, pre, code {
     margin: 0;
 }
 
+.post blockquote, .comment blockquote {
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    font-style: italic;
+}
+
 .post .meta {
     font-size: 13px;
     color: <?=$tango_plum2?>;
