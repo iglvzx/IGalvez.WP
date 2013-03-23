@@ -1,4 +1,5 @@
 <div id="adsense-footer">
+<div id="google-wrapper">
 <script type="text/javascript">
 google_ad_client = "ca-pub-0658747198414478";
 
@@ -18,4 +19,5 @@ if(width >= 468) {
 <script type="text/javascript"
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
+</div>
 </div>

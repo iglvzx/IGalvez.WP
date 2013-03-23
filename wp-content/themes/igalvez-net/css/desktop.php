@@ -220,6 +220,10 @@ div, p, a, img, pre, code {
     text-align: center;
 }
 
+#google-wrapper {
+    background-color: #FDF6E5;
+}
+
 #adsense-related {
     margin-bottom: 20px;
 }
