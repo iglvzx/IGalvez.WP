@@ -128,14 +128,14 @@ div, p, a, img, pre, code {
     font-size: 17px;
 }
 
-.post .content ul {
+.post .content ul, .post .content ol {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 20px;
 }
 
-.post .content ul ul {
+.post .content ul ul, .post .content ol ul {
     margin: 0;
 }
 
@@ -189,9 +189,14 @@ div, p, a, img, pre, code {
     font-size: 13px;
     font-weight: bold;
     padding: 0 2px;
+    color: <?=$tango_scarletred3?>;
 }
 
-.post a code {
+.post a code, .comment a code {
+    color: <?=$tango_skyblue3?>;
+}
+
+.post a code, .comment a code {
     padding: 0;
 }
 
