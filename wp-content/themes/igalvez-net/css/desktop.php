@@ -66,6 +66,14 @@ div, p, a, img, pre, code {
     color: <?=$tango_aluminium4?>;
 }
 
+#footer a {
+    color: <?=$tango_aluminium4?>;
+}
+
+#footer a:hover {
+    border-bottom: 1px dotted <?=$tango_aluminium4?>;
+}
+
 .post {
     padding: 10px;
     margin-bottom: 10px;

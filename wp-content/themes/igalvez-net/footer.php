@@ -1,8 +1,13 @@
             <?php include 'adsense-footer.php'?>
             <div id="footer">
-                &copy; 2011-<?php echo date('Y'); ?> Israel Galvez.
+                &copy; 2011-<?php echo date('Y'); ?>
+                <a href="<?php bloginfo('wpurl'); ?>/contact/">Israel Galvez</a>.
                 All rights reserved. |
-                Powered by: HostGator, eNom, WordPress, GeSHi.
+                Powered by:
+                <a href="http://secure.hostgator.com/%7Eaffiliat/cgi-bin/affiliates/clickthru.cgi?id=iglvzx">HostGator</a>,
+                <a href="http://www.enom.com/">eNom</a>,
+                <a href="http://wordpress.org/">WordPress</a>,
+                <a href="http://qbnz.com/highlighter/">GeSHi</a>.
             </div>
         </div><!-- #wrapper -->
         <!-- WordPress footer -->
