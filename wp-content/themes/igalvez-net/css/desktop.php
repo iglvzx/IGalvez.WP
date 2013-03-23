@@ -120,7 +120,7 @@ div, p, a, img, pre, code {
     height: auto;
 }
 
-.post .content h3, .post .content h4 {
+.post h3, .post h4 {
     margin-top: 0;
     margin-bottom: 10px;
     margin-left: 0;
@@ -204,7 +204,11 @@ div, p, a, img, pre, code {
     text-align: center;
 }
 
-<?php include 'feedback.php'; ?>
+#adsense-related {
+    margin-bottom: 20px;
+}
+
+<?php include 'feedback.css'; ?>
 
 /* Collapse to Width=100% for small screens */
 @media screen and (max-width: 860px), screen and (max-device-width: 480px) {
@@ -237,4 +241,6 @@ div, p, a, img, pre, code {
     }
 }
 
-<?php include 'geshi.php'; ?>
+<?php include 'geshi.css'; ?>
+
+<?php include 'google-override.css'; ?>
