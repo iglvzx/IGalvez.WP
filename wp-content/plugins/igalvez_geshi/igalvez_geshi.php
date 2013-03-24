@@ -26,6 +26,7 @@ function igalvez_geshi($atts, $content = null) {
     $geshi->enable_classes();
     $geshi->enable_line_numbers(GESHI_NORMAL_LINE_NUMBERS);
     $geshi->set_tab_width(4);
+    $geshi->enable_keyword_links(false);
     
     // Convert $lines parameter to an array of integers
     // and highlight these individual lines.
