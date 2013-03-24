@@ -128,8 +128,7 @@
 
 /* AutoHotkey ----------------------------------------------------------------*/
 .autohotkey .kw3 { /* commands */
-    color: <?=$solarized_blue?>;
-    font-weight: bold;
+    color: <?=$solarized_cyan?>;
 }
 
 .autohotkey .kw5 { /* directives */
@@ -143,11 +142,11 @@
 }
 
 .autohotkey .kw6 { /* keys and buttons */
-    color: <?=$solarized_magenta?>;
+    color: <?=$solarized_blue?>;
 }
 
 .autohotkey .re0 { /* variables */
-    color: <?=$solarized_cyan?>;
+    color: <?=$solarized_magenta?>;
 }
 
 .autohotkey .st0, /* strings and numbers */

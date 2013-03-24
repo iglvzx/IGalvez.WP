@@ -24,7 +24,11 @@
         <div class="meta">
             <div>
                 Post ID: <span><?php the_id(); ?></span> |
-                Date: <span><?php the_time('Y-m-d') ?></span>
+                Author: <span><?php the_author(); ?></span>
+            </div>
+            <div>
+                Published: <span><?php the_time('Y-m-d, H:i') ?></span> |
+                Last Updated: <span><?php the_modified_time('Y-m-d, H:i') ?></span>
             </div>
             <div>
                 Category: <?php the_category(', '); ?>
