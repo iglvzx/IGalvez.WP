@@ -123,7 +123,6 @@ div, p, a, img, pre, code {
 }
 
 .post .content img {
-    display: block;
     max-width: 100%;
     height: auto;
 }
