@@ -204,6 +204,8 @@ div, p, a, img, pre, code {
     font-weight: bold;
     padding: 0 2px;
     color: <?=$tango_scarletred3?>;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 .post a code, .comment a code {
