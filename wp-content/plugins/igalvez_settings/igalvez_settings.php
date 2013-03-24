@@ -9,11 +9,9 @@ Author URI: http://igalvez.net/
 License: GPL v3
 */
 
-// Process shortcodes before line breaks.
+// Process shortcodes before other content
 remove_filter('the_content', 'do_shortcode');
-add_filter('the_content', 'do_shortcode', 11);
-remove_filter('the_content', 'wpautop');
-add_filter('the_content', 'wpautop' , 12);
+add_filter('the_content', 'do_shortcode', 0);
 
 // Allow shortcodes in comments
 add_filter('comment_text', 'shortcode_unautop');

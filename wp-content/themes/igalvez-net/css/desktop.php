@@ -122,6 +122,10 @@ div, p, a, img, pre, code {
     border-bottom: 1px dotted <?=$tango_skyblue3?>;
 }
 
+.post a, .comment a {
+    word-wrap: break-word;
+}
+
 .post .content img {
     max-width: 100%;
     height: auto;
