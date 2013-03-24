@@ -192,6 +192,11 @@ input#submit:active, input#submit:hover {
     color: <?=$tango_aluminium4?>;
 }
 
+#google-branding a {
+    color: <?=$tango_aluminium4?>;
+    text-decoration: none;
+}
+
 #google-logo {
     vertical-align: middle;
 }
