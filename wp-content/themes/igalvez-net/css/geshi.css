@@ -125,3 +125,32 @@
 .ini .re1 { /* properties */
     color: <?=$solarized_cyan?>;
 }
+
+/* AutoHotkey ----------------------------------------------------------------*/
+.autohotkey .kw3 { /* commands */
+    color: <?=$solarized_blue?>;
+    font-weight: bold;
+}
+
+.autohotkey .kw5 { /* directives */
+    color: <?=$solarized_violet?>;
+    font-weight: bold;
+}
+
+.autohotkey .kw1 { /* main keywords */
+    color: <?=$solarized_green?>;
+    font-weight: bold;
+}
+
+.autohotkey .kw6 { /* keys and buttons */
+    color: <?=$solarized_magenta?>;
+}
+
+.autohotkey .re0 { /* variables */
+    color: <?=$solarized_cyan?>;
+}
+
+.autohotkey .st0, /* strings and numbers */
+.autohotkey .nu0 {
+    color: <?=$solarized_yellow?>;
+}
