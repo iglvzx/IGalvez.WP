@@ -27,7 +27,7 @@
     padding-bottom: 20px;
 }
 
-.comment.even {
+#comment-list .thread-even {
     background-color: <?=$igalvez_gray?>;
 }
 
@@ -40,7 +40,6 @@
 
 .children .comment {
     padding: 0;
-    padding-top: 10px;
 }
 
 .reply {
@@ -83,7 +82,10 @@
 }
 
 .bypostauthor > .comment-body cite {
-
+    background-color: <?=$tango_aluminium6?>;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: <?=$igalvez_white?>;
 }
 
 .comment-meta {

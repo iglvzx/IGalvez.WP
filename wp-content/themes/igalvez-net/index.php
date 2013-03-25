@@ -23,7 +23,11 @@
         
         <div class="meta">
             <div>
-                Post ID: <span><?php the_id(); ?></span> |
+                <?php
+                $the_id = get_the_id();
+                $the_shortlink = wp_get_shortlink();
+                ?>
+                Post ID: <a href="<?php echo $the_shortlink; ?>"><?php echo $the_id; ?></a> |
                 Author: <span><?php the_author(); ?></span>
             </div>
             <div>
@@ -44,6 +48,9 @@
                 }
                 ?>
                 Feedback: <a href="<?php echo $comments_url; ?>"><?php comments_number(); ?></a>
+                <?php if(is_single()) : ?>
+                | <a href="#respond">Reply</a>
+                <?php endif; ?>
             </div>
         </div>
     
