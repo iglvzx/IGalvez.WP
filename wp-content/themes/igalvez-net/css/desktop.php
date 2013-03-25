@@ -114,6 +114,10 @@ div, p, a, img, pre, code {
     word-wrap: break-word;
 }
 
+.post li, .comment li {
+    word-wrap: break-word;
+}
+
 .post .content a {
     color: <?=$tango_skyblue3?>;
 }

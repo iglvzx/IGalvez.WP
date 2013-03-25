@@ -11,12 +11,8 @@
 }
 
 .comment {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 0;
+    padding: 10px;
     border-radius: 4px;
-    margin-bottom: 10px;
 }
 
 .comment a {
@@ -36,11 +32,45 @@
 }
 
 .children {
+    padding: 0;
     padding-left: 20px;
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
     list-style: none;
+    border-left: 1px dotted <?=$tango_aluminium4?>;
+}
+
+.children .comment {
+    padding: 0;
+    padding-top: 10px;
+}
+
+.reply {
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+.reply a {
+    font-weight: bold;
+    color: <?=$tango_plum2?>;
+}
+
+.comment-author {
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.comment-author a {
+    color: <?=$tango_plum2?>;
+}
+
+.comment-author a:hover {
+    border-bottom: 1px dotted <?=$tango_plum2?>;
+}
+
+.comment-meta {
+    display: inline-block;
+    padding-bottom: 10px;
 }
 
 .comment-author .says {
@@ -52,19 +82,20 @@
     font-weight: bold;
 }
 
-.bypostauthor cite {
-    background-color: <?=$tango_aluminium6?>;
-    padding: 2px 4px;
-    border-radius: 4px;
-    margin-bottom: 2px;
-    display: inline-block;
-    color: <?=$igalvez_white?>;
-    font-size: 13px;
+.bypostauthor > .comment-body cite {
+
 }
 
 .comment-meta {
-    margin-bottom: 10px;
     font-size: 13px;
+}
+
+.comment-meta a {
+    color: <?=$tango_plum2?>;
+}
+
+.comment-meta a:hover {
+    border-bottom: 1px dotted <?=$tango_plum2?>;
 }
 
 #respond {
@@ -167,12 +198,17 @@ input#submit:active, input#submit:hover {
     margin-bottom: 10px;
 }
 
-#respond .logged-in-as a {
+#respond .logged-in-as a, #respond h3 a {
     color: <?=$tango_skyblue3?>;
 }
 
-#respond .logged-in-as a:hover {
+#respond .logged-in-as a:hover, #respond h3 a:hover {
     border-bottom: 1px dotted <?=$tango_skyblue3?>;
+}
+    
+#cancel-comment-reply-link {
+    font-size: 13px;
+    font-weight: normal;
 }
 
 #search-form {
