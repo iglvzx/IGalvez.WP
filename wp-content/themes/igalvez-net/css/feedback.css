@@ -82,7 +82,7 @@
 }
 
 .bypostauthor > .comment-body cite {
-    background-color: <?=$tango_aluminium6?>;
+    background-color: <?=$tango_plum2?>;
     padding: 2px 4px;
     border-radius: 4px;
     color: <?=$igalvez_white?>;

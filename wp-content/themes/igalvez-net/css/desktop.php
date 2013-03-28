@@ -30,7 +30,7 @@ div, p, a, img, pre, code {
     padding: 10px;
     border-radius: 4px;
     margin: 20px auto;
-    width: 800px;
+    width: 860px;
 }
 
 #header {
@@ -244,7 +244,7 @@ div, p, a, img, pre, code {
 <?php include 'feedback.css'; ?>
 
 /* Collapse to Width=100% for small screens */
-@media screen and (max-width: 860px), screen and (max-device-width: 480px) {
+@media screen and (max-width: 900px), screen and (max-device-width: 480px) {
     #wrapper {
         border-radius: 0;
         margin: 0;
