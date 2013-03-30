@@ -47,7 +47,7 @@
             <a href="<?php bloginfo('wpurl'); ?>/contact/">Contact</a> |
             Blog:
             <a href="#">Archives</a> |
-            <a href="#">Categories</a> |
-            <a href="#">Tags</a> |
+            <a href="<?php bloginfo('wpurl'); ?>/categories/">Categories</a> |
+            <a href="<?php bloginfo('wpurl'); ?>/tags/">Tags</a> |
             <a href="<?php bloginfo('wpurl'); ?>/search/">Search</a>
         </div>
