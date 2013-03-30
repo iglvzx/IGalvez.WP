@@ -19,5 +19,5 @@ if(width >= 468) {
 <script type="text/javascript"
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
-</div>
-</div>
+</div><!-- /#google-wrapper -->
+</div><!-- /#adsense-footer -->
