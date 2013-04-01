@@ -36,8 +36,8 @@
         <div id="wrapper">
         
         <div id="header">
-            <div id="title">IGalvez.Net</div>
-            <div id="tagline">A Personal Knowledgebase</div>
+            <div id="title"><?php bloginfo('name'); ?></div>
+            <div id="tagline"><?php bloginfo('description'); ?></div>
         </div>
   
         <div id="menu">

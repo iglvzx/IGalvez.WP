@@ -135,6 +135,27 @@ div, p, a, img, pre, code {
     height: auto;
 }
 
+.screenshot img {
+    display: none;
+}
+
+.toggle-screenshot {
+    color: <?=$tango_skyblue3?>;
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block;
+    padding-bottom: 1px;
+    margin-bottom: 5px;
+}
+
+.toggle-screenshot:hover {
+    border-bottom: 1px dotted <?=$tango_skyblue3?>;
+    padding-bottom: 0;
+}
+
+
+
 .post h3, .post h4 {
     margin-top: 0;
     margin-bottom: 10px;
